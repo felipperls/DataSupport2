@@ -1,11 +1,197 @@
-.col-auto{
-color: black;
+/* NavBar*/
 
+header{
+    background-color: #83A767;
+    }
+
+.navbar{
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 34px;
+    }
+
+.logo{
+    font-size: 2rem;
+    font-family: "Georgia";
+    text-decoration: none;
+    color: white;
+    transition: 0.5s ease;
+
+    }
+
+.logo:hover{
+    color: green;
+
+    }
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+    gap: 70px;
+
+    }
+
+li{
+    list-style: none;
+    }
+
+.nav-item{
+    transition: 0.5s ease;
+    color: white;
+    }
+
+.nav-item:hover{
+    color: green;
+    }
+
+.Data{
+    display: none;
+    cursor: pointer;
+    }
+
+.bar{
+    display: block;
+    widht: 28px;
+    height: 3px;
+    border-radius: 2px;
+    margin: 5px auto;
+    background-color: #fff;
+    transition: all 0.3s ease in-out;
+    }
+
+/* Corpo Pag. inicial*/
+.imagem-inicio{
+    width: 600;
+    height:600;
+    align: left;
 }
 
-.navbar {
-background-color: red;
+.texto-inicial{
+    color:#83A767;
+    text-align: center;}
+
+.informação{
+    text-align: left;
 }
 
+/* Pagina de Login e registro*/
+
+.texto{
+    color: white;
+    font-family: "Verdana";
+    font-weight: normal;
+    text-align: center;
+    }
+
+.caixa{
+    background-color: #83A767;
+    border-radius: 20px;
+    font-family: "Georgia";
+    border: solid 20px;
+    border-color: #83A767;
+    }
+
+.imagem{
+    height: 100px;
+    width: 115px;
+    margin-left: auto;
+    display: block;
+    margin-right: auto;
+    }
+
+label{
+    color: white;
+    }
+
+.form-label{
+    margin-left: auto;
+    margin-right: auto;
+    outline: none;
+    border: none;
+    }
+
+.form-check-input:hover{
+    color: green;
+}
+
+placeholder{
+    color: #9D9D9D;
+    }
+
+.btn-default{
+    border: none;
+    background-color:  #071304;
+    border-radius: 15px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    color: white;
+    height:35px;
+}
+.botão{
+    color: white;
+    text-decoration: none;
+}
+.btn-primary:hover{
+      background-color: green;
+      }
+
+.text{
+color: #071304;}
+
+.texto-cad{
+color: white;}
+
+.form-control{
+outline: none;
+border: none;
+background: #E9E9E9;}
 
 
+/* Pagina de Upload*/
+
+.caixa1{
+    background-color: #83A767;
+    border-radius: 20px;
+    font-family: "Georgia";
+    border: solid 20px;
+    border-color: #83A767;
+    }
+
+.caixa2{
+    background: #fff;
+    border-radius: 20px;
+    border: solid 40px;
+    border-color: white;
+   }
+
+.texto1{
+    color: #83A767;
+    font-family: "Verdana";
+    font-weight: normal;
+    text-align: center;
+}
+
+.pasta{
+align:center;
+}
+
+/* Pagina de download */
+
+.caixa3{
+    background-color: #9D9D9D;
+    border-radius: 20px;
+    border: solid 20px;
+    border-color: #9D9D9D;
+
+    }
+
+.imagem1{
+    height: 200px;
+    width: 250px;
+    margin-left: auto;
+    display: block;
+    margin-right: auto;
+    }

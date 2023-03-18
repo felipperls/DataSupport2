@@ -1,27 +1,86 @@
- <!DOCTYPE html>
+ {% load static %}
+<html lang="pt-br" xmlns="http://www.w3.org/1999/html">
 <head>
-     <link rel="stylesheet"  type="text/css" href="{% static 'css/style.css' %}">
- </head>
- <body>
-<h1 align="center"> <font size="7" color="Blue">Data Support</font></h1>
-<hr/>
-<h2 align="center">O seu gerenciador de documentos!</h2>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Cadastro</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
 
-<h1>Efetue seu Cadastro</h1>
-<form>
-    <div>
-        <label > <font size="4"> Nome de usuario: </font> </label><br />
-        <input type="text" name="name" id="name">
-    </div>
-    <div>
-        <label> <font size="4"> Senha:</font></label><br />
-        <input align="center" type="password" name="mail" id="mail">
-    </div>
-    <div>
-        <label> <font size="4"> Confime a senha: </font> </label><br />
-        <input type="password" name="senha" id="senha">
-    </div>
-    <div>
-        <input type="submit" value="Cadastrar" >
-    </div>
-</form>
+ <body>
+ <header>
+    <nav class="navbar">
+
+        <a href="http://127.0.0.1:8000/" class="logo">Data Support</a>
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="http://127.0.0.1:8000" class="nav-link">Pagina Inicial</a></li>
+            <li class="nav-item"><a href="http://127.0.0.1:8000/login" class="nav-link">Login</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Ajuda</a></li>
+        </ul>
+    </nav>
+    </header>
+
+         <div class="row justify-content-center align-items-center vh-100">
+             <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-8 col-xxl-4">
+                 <div class="container">
+
+                 <div class="caixa">
+                     <h2 class="texto">Bem Vindo!</h2>
+                    <h4 class="texto">Ao seu gerenciador de documentos!</h4>
+                     <form>
+                         <img src="static/img/logo.png" alt="Logo" class="imagem">
+                            <h1 align="center" >Efetue seu Cadastro</h1>
+
+                         <div class="row justify-content-center align-items-center mt-3">
+                             <div class="col">
+                                <label for="password" class="form-label" >Nome</label>
+                                <input type="text" class="form-control" placeholder="Digite o nome">
+                             </div>
+                             <div class="col">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" name="email" id="email" class="form-control" placeholder="Digite o email">
+                             </div>
+                         </div>
+
+                         <div class="row justify-content-center align-items-center ">
+                             <div class="col">
+                                <label for="password" class="form-label" >Senha</label>
+                                <input type="password" name="password" id="password" class="form-control" placeholder="Digite a senha">
+                             </div>
+                              <div class="col">
+                                <label for="password" class="form-label" >Confirme a senha</label>
+                                <input type="password" name="password" id="password2" class="form-control" placeholder="Confirme a senha">
+                             </div>
+                         </div>
+                         <div class="row mt-3 justify-content-center">
+                             <div class="col-auto">
+                                 <div class="form-check ">
+                                     <input type="checkbox" name="form-check-input" id="flexCheckDefault" class="form-check-input">
+                                     <label for="flexCheckDefault" class="form-check-label">Concordo com os Termos de Uso e Políticas de Privacidade.</label>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="row justify-content-center">
+                             <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-5 col-xxl-4 ">
+                                 <button type="submit" class="btn-default w-100"> <a href="http://127.0.0.1:8000/upload" class="botão">Registrar</a></button>
+                             </div>
+                         </div>
+                 <div class="row  justify-content-center align-items-center mt-2">
+                     <div class="col-auto">
+                                <h6>Já possui conta? </h6>
+                     </div>
+                          <div class="row justify-content-center align-items-center">
+                             <div class="col-auto">
+                                 <a href="http://127.0.0.1:8000/login" class="text">Faça login</a>
+                            </div>
+                          </div>
+                     </div>
+                         </form>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </body>
+</html>
