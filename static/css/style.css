@@ -5,6 +5,7 @@ header{
     }
 
 .navbar{
+
     min-height: 70px;
     display: flex;
     align-items: center;
@@ -18,19 +19,16 @@ header{
     text-decoration: none;
     color: white;
     transition: 0.5s ease;
-
     }
 
 .logo:hover{
     color: green;
-
     }
 
 .nav-menu{
     display: flex;
     align-items: center;
     gap: 70px;
-
     }
 
 li{
@@ -63,18 +61,21 @@ li{
 
 /* Corpo Pag. inicial*/
 .imagem-inicio{
+
+    display: block;
     width: 600;
-    height:600;
-    align: left;
+    height:400;
+    align: Center;
 }
 
 .texto-inicial{
     color:#83A767;
     text-align: center;}
 
-.informação{
-    text-align: left;
+.lista{
+     text-align: center;
 }
+
 
 /* Pagina de Login e registro*/
 
@@ -89,7 +90,7 @@ li{
     background-color: #83A767;
     border-radius: 20px;
     font-family: "Georgia";
-    border: solid 20px;
+    border: solid 10px;
     border-color: #83A767;
     }
 
@@ -111,6 +112,7 @@ label{
     outline: none;
     border: none;
     }
+
 
 .form-check-input:hover{
     color: green;
@@ -145,6 +147,11 @@ color: #071304;}
 color: white;}
 
 .form-control{
+outline: none;
+border: none;
+background: #E9E9E9;}
+
+.form-group{
 outline: none;
 border: none;
 background: #E9E9E9;}
